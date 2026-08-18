@@ -1,0 +1,131 @@
+/* Reset some default styles */
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+	font-family: Times New Roman, serif;
+}
+
+/* Navigation Bar */
+.navbar {
+    background-color: #5B2333;
+    padding: 10px;
+}
+.navbar ul {
+    list-style: none;
+    display: flex;
+	gap: 40px; /*to add some space between the word */
+    justify-content: center;
+}
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+.navbar ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Banner Section */
+.banner {
+    background: url('banner.jpg') no-repeat center center/cover;
+    color: black;
+    text-align: center;
+    padding: 80px 20px;
+}
+.banner h1 {
+	color: #fff;
+    font-size: 3em;
+    margin-bottom: 10px;
+	text-shadow: 2px 2px 6px rgba(0,0,0,0.7); /* soft dark shadow */
+}
+.banner p {
+    font-size: 1.2em;
+    color: #f0f0f0; 
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.7);
+}
+/* Main Layout */
+.container {
+    display: flex;
+	width: 100%;             
+    max-width: 1200px;       
+    margin: 0 auto;        
+}
+
+/* Left Sidebar */
+.sidebar {
+    width: 25%;
+	margin: 0;          /* Remove outside margin */
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+.sidebar i {
+    color: #5B2333;   /* matches navbar color */
+    margin-right: 8px;
+}
+.sidebar p {
+    margin: 8px 0;
+}
+.sidebar h2 {
+	background-color: #5B2333;
+    padding: 5px;
+	color: #fff;
+	text-align: center;
+}
+
+/* Right Content */
+.content {
+    width: 75%;
+    padding: 20px;
+	background-color: #fff;
+}
+.content ul {
+    margin: 15px 0;
+    padding-left: 20px;
+    list-style-type: none;
+}
+
+.content h2 {
+	background-color: #5B2333;
+    padding: 5px;
+	color: #fff;
+	text-align: center;
+}
+.content ul li strong {
+	color: #5B2333;
+}
+
+.gallery {
+	display: flex;
+    gap: 20px;            /* space between images */
+    justify-content: center;
+    flex-wrap: wrap; 
+}
+
+.gallery figure {
+    text-align: center;
+    width: 150px;         /* fix width so captions align neatly */
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;   /* rounded corners for a nice look */
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+.gallery figcaption {
+    margin-top: 8px;
+    font-size: 0.9em;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Footer */
+.footer {
+    background-color: #5B2333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+    position: relative; /* keeps it after content */
+}
